@@ -6,7 +6,7 @@ channels:
 dependencies:
   - cudatoolkit=11.6
   - plyfile
-  - python=3.7.13
+  - python=3.8
   - pip=22.3.1
   - pytorch=1.12.1
   - torchaudio=0.12.1
@@ -15,3 +15,5 @@ dependencies:
   - pip:
     - submodules/diff-gaussian-rasterization
     - submodules/simple-knn
+
+# 如果安装失败提示找不到symbol，尝试降级mkl==2024.0
